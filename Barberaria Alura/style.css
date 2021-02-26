@@ -7,6 +7,11 @@ header {
 	padding: 20px 0;
 }
 
+.logo:hover {
+	transition: 400ms;
+	opacity: 0.7;
+}
+
 .caixa {
 	position: relative;
 	max-width: 940px;
@@ -33,6 +38,7 @@ nav a {
 }
 
 nav a:hover {
+	transition: 500ms;
 	color: darkorange;
 	text-decoration: underline;
 	transform: scale(1.2);
@@ -57,7 +63,8 @@ nav a:hover {
 }
 
 .produtos li:hover {
-	border-color: darkorange;
+	transition: 500ms;
+	border: 3px solid darkorange;
 	cursor: pointer;
 }
 
@@ -65,14 +72,15 @@ nav a:hover {
 	border-color: #088C19;	
 }
 
-.produtos li:hover h2 {
+/* .produtos li:hover h2 {
 	font-size: 34px;
 }
+*/
 
 .produtos h2 {
 	font-size: 30px;
 	font-weight: bold;
-}
+} 
 
 .produto-descricao {
 	font-size: 18px;
@@ -160,16 +168,19 @@ th  {
 td, th {
 	border: 1px solid #000000;
 	padding: 5px 20px;
+	
 }
 
 form {
-	margin: 40px 0;
+	/* margin: 40px 0; */
+	width: 640px;
+	margin: 0 auto;
 }
 
 form label, select, form legend {
 	display:block;
 	font-size: 20px;
-	margin: 0 0 10px;
+	margin: 10px 0 10px;
 }
 
 .input-padrao {
@@ -202,7 +213,8 @@ form label, select, form legend {
 }
 
 table {
-    margin: 20px 0 40px;
+    /* margin: 20px 0 40px; */
+	margin: 3em auto;
 }
 
 thead {
@@ -233,13 +245,13 @@ td, th {
 	font-weight: bold;
 }
 
-.titulo-principal:before {
+/* .titulo-principal:before {
 	content: "[ ";
-}
+}										
 
 .titulo-principal:after {
 	content: " ]";
-}
+} */
 
 .principal {
 	padding: 3em 0;
@@ -267,10 +279,17 @@ td, th {
 	width: 120px;
 	float: left;
 	margin: 0 20px 20px 0; /* cima direita baixo esquerda */
+	opacity: 0.7;
+	box-shadow: 10px 10px 15px 5px #000000;
+	transition: 400ms;
+}
+
+.utensilios:hover {
+	opacity: 1;
 }
 
 .mapa {
-	padding: 3em 0; /* cima/baixo laterais*/
+	padding: 3em 0; /* cima/baixo laterais */
 	background: linear-gradient(#fefefe, #888888);
 }
 
@@ -293,6 +312,7 @@ td, th {
 	width: 40%;
 	display: inline-block;
 	vertical-align: top;
+	/* text-shadow: 2px 2px #ffffff; sombra no texto*/
 }
 
 .itens {
@@ -304,14 +324,82 @@ td, th {
 }
 
 .itens:before {
-	content:"⦁ ";
+	content: "⦁ ";
 }
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 0.7;
+	transition: 400ms;
+	box-shadow: 10px 10px 15px 5px #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 1;
 }
 
 .video {
 	width: 560px;
 	margin: 2em auto;
+	opacity: 0.7;
+	transition: 400ms;
+	box-shadow: 10px 10px 15px 5px #000000;
+}
+
+.video:hover {
+	opacity: 1;
+}
+
+/* *********** Seletores avançados CSS ***********
+
+
+main > p {
+	para acessar todos os p dentro de main
+}
+
+img + p {
+	para acessar o primeiro p após um img
+}
+
+img ~ p {
+	para acessar todos os p após um img
+}
+
+main p:not(#missao) {
+	para acessar todos os p dentro de main, exceto o p que tem id missao
+}
+
+*********** Função calc CSS ***********
+calc(40% - 10px) etc para dimensionar */
+
+/* adaptação de tela para outros dispositivos */
+@media screen and (max-width: 480px) {
+
+	.video, .conteudo-beneficios, .principal, .mapa-conteudo {
+		margin: 10px;
+	}
+
+	.lista-beneficios {
+		margin-bottom: 10px;
+	}
+
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produtos li, header, .checkbox, .input-group, form, .input-padrao {
+		width: auto;
+	}
+
+	.produtos li, form {
+		margin: 10px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
 }
