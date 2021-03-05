@@ -18,29 +18,42 @@ body {
 }
 
 header .container {
+    position: absolute
+}
+
+header .container, .logo {
     display: flex; /*alinha os itens em colunas*/
     flex-direction: row;
     align-items: center; /*centraliza os items verticalmente*/
-    position: absolute;
 }
 
-.search {}
+header .search {
+    display: flex; /*alinha os itens em colunas*/
+    flex-direction: row;
+    align-items: center; /*centraliza os items verticalmente*/
+    margin-left: 1100px;
+}
+
 
 header .logo {
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
     cursor: pointer;
-    position: relative;
+}
+
+.logo:hover {
+    transition: 700ms;
+    opacity: 0.8;
 }
 
 
 header nav a {
+    width: auto;
+}
+
+header nav a, footer a {
     text-decoration: none;
     color: #fff;
-    margin-left: 30px;
+    margin-left: 15px;
     font-weight: bold;
-    position: relative;
 }
 
 header nav a:hover {
@@ -52,23 +65,24 @@ header nav a:hover {
 
 .banner-principal {
     font-size: 20px;
-    height: 500px;
+    height: 650px;
     background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,100%) ), url(/style/img/breaking-bad-banner.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    cursor: pointer;
 }
 
 .banner-principal .descricao {
     margin-top: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
 }
 
 .titulo {
-    margin-top: 15%;
-    font-size: 45px;
+    margin-top: 10%;
+    margin-left:25px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -77,7 +91,6 @@ header nav a:hover {
     
     border: none;
     padding: 15px 30px;
-    margin-bottom: 10px;
     margin-right: 15px;
     font-size: 12px;
     font-weight: bold;
@@ -116,11 +129,25 @@ header nav a:hover {
 }
 
 .minha-lista {
+    background: linear-gradient(rgb(0, 0, 0), 60%, var(--preto));
+    padding-left: 15px;
+}
+
+.minha-lista, .subtitulos {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background: linear-gradient(rgb(0, 0, 0), 60%, var(--preto));
     margin-bottom: 5px;
-    padding-left: 15px;;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.minha-lista:hover, .subtitulos:hover {
+    transition: 500ms;
+    opacity: 1;
+}
+
+.subtitulos {
+    margin-left: 15px;
 }
 
 .box-poster {
@@ -128,16 +155,39 @@ header nav a:hover {
     width: 100%;
     display: block;
     position: relative;
+    cursor: pointer;
 }
 
 .box-poster:hover {
-    transition: 500ms;
-    transform: scale(1.05);
+    transition: 700ms;
+    opacity: 0.5;
 }
 
 .carousel {
     padding-left: 15px;
     padding-right: 15px;
-    position: absolute;
-    
+}
+
+footer ul {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+footer ul li:hover {
+    transition: 700ms;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer ul li {
+    padding: 15px;
+    list-style: none;
+}
+
+footer .contato {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    font-size: 30px;
+
 }
