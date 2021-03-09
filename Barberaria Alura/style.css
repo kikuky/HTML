@@ -350,6 +350,10 @@ td, th {
 	opacity: 1;
 }
 
+.mensagem-formulario {
+	display: none;
+}
+
 /* *********** Seletores avançados CSS ***********
 
 
