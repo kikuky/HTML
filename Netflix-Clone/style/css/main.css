@@ -18,20 +18,20 @@ body {
 }
 
 header .container {
-    position: absolute
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
-header .container, .logo {
-    display: flex; /*alinha os itens em colunas*/
-    flex-direction: row;
-    align-items: center; /*centraliza os items verticalmente*/
+header .esquerda {
+    display: flex;
+    align-items: center;
 }
 
 header .search {
-    display: flex; /*alinha os itens em colunas*/
-    flex-direction: row;
-    align-items: center; /*centraliza os items verticalmente*/
-    margin-left: 1100px;
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
 }
 
 
@@ -71,7 +71,6 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     cursor: pointer;
 }
 
@@ -131,6 +130,7 @@ header nav a:hover {
 .minha-lista {
     background: linear-gradient(rgb(0, 0, 0), 60%, var(--preto));
     padding-left: 15px;
+    
 }
 
 .minha-lista, .subtitulos {
