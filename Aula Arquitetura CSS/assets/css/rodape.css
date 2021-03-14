@@ -1,0 +1,12 @@
+.rodape {
+  align-items: center;
+  background: #bfbfbf;
+  color: #fdfdfd;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  justify-content: space-between;
+  text-align: right;
+  text-transform: lowercase;
+  padding: 1.5625rem 5rem;
+}
