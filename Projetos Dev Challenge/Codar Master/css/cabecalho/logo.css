@@ -1,0 +1,10 @@
+.logo {
+    color: var(--vermelho);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+

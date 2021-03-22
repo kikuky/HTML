@@ -1,0 +1,17 @@
+.menu {
+    font-weight: 300;
+    font-size: 1.1rem;
+    width: 25%;
+}
+
+.menu__items {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__item:not(:last-child):hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: 500ms;
+}

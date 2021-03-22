@@ -1,0 +1,10 @@
+.servicos__celular___input {
+    border: .5px solid lightgray;
+    background-color: lightgray;
+    border-radius: .5rem;
+    padding: .7rem 1rem;
+}
+
+.servicos__input___botao {
+    padding: .7rem 3rem;
+}

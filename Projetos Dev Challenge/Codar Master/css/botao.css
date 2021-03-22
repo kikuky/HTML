@@ -1,0 +1,12 @@
+.botao {
+    background-color: var(--vermelho);
+    border: none;
+    border-radius: .7rem;
+    color:#fff;
+}
+
+.botao:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: 500ms;
+}
