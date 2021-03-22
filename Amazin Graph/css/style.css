@@ -1,0 +1,139 @@
+:root {
+    --orange: #D2872C;
+    --grey: #766F68;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem
+}
+
+.icone {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.icone:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.menu {
+    width: 15%;
+}
+
+.menu__bar {
+    display: none;
+}
+
+.menu__lista {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+.menu__link {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    padding-top: 6rem;
+    padding-left: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__texto {
+    color: var(--grey);
+    width: 50%;
+}
+
+.main__titulo {
+    font-size: 4rem;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.main__conteudo {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+
+.main__img {
+    width: 900px;
+}
+
+.main__botao {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 1rem;
+    }
+    .cabecalho {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .menu__bar {
+        display: block;
+    }
+
+    .main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .main__texto {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main__titulo {
+        font-size: 2rem;
+    }
+
+    .main__conteudo {
+        width: 100%;
+    }
+
+    .main__img {
+        width: 100%;
+    }
+}
+
