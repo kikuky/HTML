@@ -1,0 +1,8 @@
+.cliente__pedro {
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 5rem;
+    padding: 2rem;
+    width: 30%;
+}

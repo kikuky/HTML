@@ -1,0 +1,6 @@
+.clientes {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    padding: 0 5rem;
+}

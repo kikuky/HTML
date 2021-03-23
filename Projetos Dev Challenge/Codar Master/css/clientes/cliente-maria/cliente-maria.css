@@ -1,0 +1,7 @@
+.cliente__maria {
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem;
+    width: 30%;
+}

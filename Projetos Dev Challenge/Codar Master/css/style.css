@@ -1,13 +1,8 @@
 :root {
     --vermelho: #D6000D;
+    --imagem-largura: 400px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-
-
-
-
-
