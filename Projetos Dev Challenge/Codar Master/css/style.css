@@ -6,3 +6,59 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 375px) {
+    .cabecalho {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .menu__lista {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+   .menu__item {
+       margin-bottom: 1rem;
+   }
+
+    .cabecalho__menu___botao {
+        display: none;
+    }
+
+    .principal {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .servicos__imagem {
+        width: 150px;
+    }
+
+    .clientes {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,9 @@
+.redes-sociais__lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-sociais__lista___link {
+    color: var(--vermelho);
+    font-size: 1.5rem;
+}

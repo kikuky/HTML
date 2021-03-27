@@ -1,0 +1,14 @@
+.rodape {
+    background: #000;
+    color: #fff;
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+}
+
+.titulo {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}

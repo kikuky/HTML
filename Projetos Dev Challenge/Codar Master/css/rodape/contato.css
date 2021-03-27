@@ -1,0 +1,12 @@
+.contato__lista {
+    line-height: 2;
+}
+
+.contato__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.email {
+    text-decoration: underline;
+}
